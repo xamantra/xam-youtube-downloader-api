@@ -13,7 +13,7 @@ git clone https://github.com/xamantra/xam-youtube-downloader.git
 
 ## Usage
 ```
-URL: https://xamantra.000webhostapp.com/ytd-api/?xam_url=YOUTUBE_VIDEO_URL_HERE
+URL: https://www.example.com/folder-name/?xam_url=YOUTUBE_VIDEO_URL_HERE
 ```
 #### Sample: 
 > [https://xamantra.000webhostapp.com/ytd-api/?xam_url=https://www.youtube.com/watch?v=PLe0-6OYWoU](https://xamantra.000webhostapp.com/ytd-api/?xam_url=https://www.youtube.com/watch?v=PLe0-6OYWoU)
