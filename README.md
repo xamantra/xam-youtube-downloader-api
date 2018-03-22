@@ -20,6 +20,11 @@ URL: https://xamantra.000webhostapp.com/ytd-api/?xam_url=YOUTUBE_VIDEO_URL_HERE
 ###### Returns:
 > ![](images/json_response.png)
 
+It returns a data in json format.
+> The field name 'url' has the link of corresponding video in a specific format and resolution.
+> The field name 'format' has the format and resolution of that link|url.
+
+
 Since it returns an array of objects in json format, you can use it in different projects easily.
 
 ### Happy Coding!
