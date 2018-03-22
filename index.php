@@ -4,15 +4,18 @@ header('Access-Control-Allow-Origin: *');
 
 include "xam-youtube-downloader.php";
 
-$video = $_GET['xam_url'];
+if(isset($_GET['xam_url'])) {
+    $video = $_GET['xam_url'];
+    $youtube_links = new xam_youtube_downloader();
 
-$youtube_links = new xam_youtube_downloader();
+    $links_object = $youtube_links->xam_getLinks($video);
 
-$links_object = $youtube_links->xam_getLinks($video);
+    foreach($links_object as $link) {
+        $links[] = $link;
+    }
 
-foreach($links_object as $link) {
-    $links[] = $link;
+    echo json_encode($links);
+}else{
+    echo "Please provide a Youtube video URL.";
 }
-
-echo json_encode($links);
 ?>

@@ -1,6 +1,4 @@
 <?php
-
-set_time_limit(60);
 // utils.php
 function xam_sig_js_decode($player_html){
 	
